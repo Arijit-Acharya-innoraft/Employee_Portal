@@ -1,0 +1,39 @@
+uuid: 4627aa34-2021-4a51-b602-2a379d25d2d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.project
+    - taxonomy.vocabulary.designation
+    - taxonomy.vocabulary.skills
+  module:
+    - node
+    - system
+    - taxonomy
+    - toolbar
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer account settings'
+  - 'administer users'
+  - 'change own username'
+  - 'create project content'
+  - 'create terms in designation'
+  - 'create terms in skills'
+  - 'delete any project content'
+  - 'delete own project content'
+  - 'delete project revisions'
+  - 'delete terms in designation'
+  - 'delete terms in skills'
+  - 'edit any project content'
+  - 'edit own project content'
+  - 'edit terms in designation'
+  - 'edit terms in skills'
+  - 'select account cancellation method'
+  - 'view user email addresses'

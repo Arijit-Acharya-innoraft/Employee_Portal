@@ -1,0 +1,8 @@
+uuid: 56822a2b-847d-4977-91b3-14fc1483bd00
+langcode: en
+status: true
+dependencies: {  }
+name: Skills
+vid: skills
+description: 'It refers to the skills of an employee'
+weight: 0

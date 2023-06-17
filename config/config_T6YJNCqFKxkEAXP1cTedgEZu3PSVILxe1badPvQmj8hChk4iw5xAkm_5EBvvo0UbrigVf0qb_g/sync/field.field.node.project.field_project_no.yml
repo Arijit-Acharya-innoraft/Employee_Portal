@@ -1,0 +1,23 @@
+uuid: e2634541-273d-499a-8e1c-cf5a0e1d7679
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_no
+    - node.type.project
+id: node.project.field_project_no
+field_name: field_project_no
+entity_type: node
+bundle: project
+label: 'Project No'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

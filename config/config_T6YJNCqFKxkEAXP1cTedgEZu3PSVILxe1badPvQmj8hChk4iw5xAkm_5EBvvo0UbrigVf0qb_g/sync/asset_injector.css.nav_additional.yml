@@ -1,0 +1,19 @@
+uuid: 3e015d9e-7801-49bf-8e82-37c61733021b
+langcode: en
+status: true
+dependencies: {  }
+id: nav_additional
+label: nav_additional
+code: |-
+  ul.nav.navbar-nav li {
+      border-left: 1px solid grey;
+  }
+
+  ul.nav.navbar-nav li:first-child {
+      border-left: none;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

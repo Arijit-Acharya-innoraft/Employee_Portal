@@ -1,0 +1,84 @@
+uuid: a148052a-5c88-480b-947b-12a8a75f56a2
+langcode: en
+status: true
+dependencies: {  }
+id: rec_proj
+label: Rec_Proj
+renderer: quick_tabs
+hide_empty_tabs: false
+default_tab: 9999
+options:
+  quick_tabs:
+    ajax: true
+    class: ''
+    style: tabsbar
+configuration_data:
+  -
+    title: 'project 1'
+    weight: 0
+    type: node_content
+    content:
+      block_content:
+        options:
+          bid: 'extra_field_block:node:article:links'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: '5'
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: 'project 2'
+    weight: 0
+    type: node_content
+    content:
+      block_content:
+        options:
+          bid: 'extra_field_block:node:article:links'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: '84'
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: project3
+    weight: 0
+    type: node_content
+    content:
+      block_content:
+        options:
+          bid: 'extra_field_block:node:article:links'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: '83'
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''

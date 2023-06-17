@@ -1,0 +1,22 @@
+uuid: 8bee652d-f1be-4560-81ba-015af3f389bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog
+  module:
+    - node
+    - toolbar
+id: blogger
+label: Blogger
+weight: 5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create blog content'
+  - 'delete any blog content'
+  - 'delete own blog content'
+  - 'edit any blog content'
+  - 'edit own blog content'
+  - 'view blog revisions'

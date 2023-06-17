@@ -1,0 +1,21 @@
+uuid: dbd2e14b-590e-4130-b7aa-571b97f2b5b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_d_o_b
+  module:
+    - datetime
+    - user
+id: user.user.field_d_o_b
+field_name: field_d_o_b
+entity_type: user
+bundle: user
+label: D.O.B
+description: 'Date of Birth of the Employees'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

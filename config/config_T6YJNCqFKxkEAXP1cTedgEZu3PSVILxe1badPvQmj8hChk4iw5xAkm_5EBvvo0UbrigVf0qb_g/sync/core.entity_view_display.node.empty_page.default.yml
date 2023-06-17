@@ -1,0 +1,28 @@
+uuid: 9f2846f7-2c9b-44d9-91cc-2d38e9f9cd7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.empty_page.body
+    - node.type.empty_page
+  module:
+    - text
+    - user
+id: node.empty_page.default
+targetEntityType: node
+bundle: empty_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,17 @@
+uuid: 0ef2630f-cd12-4654-a4a0-a720c2d37997
+langcode: en
+status: true
+dependencies: {  }
+id: config_split_1
+label: 'Config split 1'
+description: ''
+weight: 0
+folder: ../config/split1
+module:
+  devel: 0
+  devel_generate: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

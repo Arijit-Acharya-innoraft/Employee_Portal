@@ -1,0 +1,20 @@
+uuid: 1ad30625-5d29-47cc-86af-b7d265700823
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_key_characteristics
+  module:
+    - user
+id: user.user.field_key_characteristics
+field_name: field_key_characteristics
+entity_type: user
+bundle: user
+label: 'Key Characteristics'
+description: 'Mention the key characteristics of the employees.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,102 @@
+uuid: 2b3c706d-674b-455b-9b39-246a73887952
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.field_customer_name
+    - field.field.node.project.field_members
+    - field.field.node.project.field_project_image
+    - field.field.node.project.field_project_no
+    - field.field.node.project.field_project_team
+    - field.field.node.project.field_start_date
+    - image.style.thumbnail
+    - node.type.project
+  module:
+    - datetime
+    - image
+    - link
+    - path
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  field_customer_name:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_members:
+    type: entity_reference_autocomplete
+    weight: 31
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_project_image:
+    type: image_image
+    weight: 29
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_project_no:
+    type: number
+    weight: 26
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_project_team:
+    type: link_default
+    weight: 30
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_start_date:
+    type: datetime_default
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

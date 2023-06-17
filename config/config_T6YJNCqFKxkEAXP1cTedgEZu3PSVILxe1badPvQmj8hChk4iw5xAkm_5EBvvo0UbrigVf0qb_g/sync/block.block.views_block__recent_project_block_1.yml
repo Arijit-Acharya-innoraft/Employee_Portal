@@ -1,0 +1,30 @@
+uuid: 3a8a4361-e70a-4f80-929e-be0da623b8e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_project
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: views_block__recent_project_block_1
+theme: bootstrap5
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:recent_project-block_1'
+settings:
+  id: 'views_block:recent_project-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/employee/*'

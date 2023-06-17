@@ -1,0 +1,15 @@
+uuid: a8b8068b-24a4-4a12-aa2b-0a0a13b24d1a
+langcode: en
+status: true
+dependencies: {  }
+id: navbar
+label: Navbar
+code: |-
+  .navbar-expand-lg .navbar-collapse {
+      justify-content: space-around !important;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

@@ -1,0 +1,321 @@
+uuid: 34a5b2fa-a3f4-4bc7-8843-d9c9bf855e45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_about
+    - field.field.user.user.field_company_name
+    - field.field.user.user.field_d_o_b
+    - field.field.user.user.field_designation
+    - field.field.user.user.field_goals
+    - field.field.user.user.field_key_characteristics
+    - field.field.user.user.field_salary
+    - field.field.user.user.field_skills
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - datetime
+    - image
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: Profile
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          b68e177c-db4a-4e0e-a78b-d065a82013df:
+            uuid: b68e177c-db4a-4e0e-a78b-d065a82013df
+            region: first
+            configuration:
+              id: 'field_block:user:user:field_designation'
+              label: Designation
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          4614d0ca-31cf-4aaf-a314-7fca3adf8e68:
+            uuid: 4614d0ca-31cf-4aaf-a314-7fca3adf8e68
+            region: second
+            configuration:
+              id: 'field_block:user:user:user_picture'
+              label: Picture
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          081532e3-cafb-4b7e-9c40-7069aec388bb:
+            uuid: 081532e3-cafb-4b7e-9c40-7069aec388bb
+            region: first
+            configuration:
+              id: 'field_block:user:user:name'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          3150698a-1075-4f37-833a-989724c5d92f:
+            uuid: 3150698a-1075-4f37-833a-989724c5d92f
+            region: first
+            configuration:
+              id: 'field_block:user:user:field_d_o_b'
+              label: D.O.B
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: inline
+                settings:
+                  timezone_override: ''
+                  format_type: html_date
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Background
+          context_mapping: {  }
+        components:
+          91c62e5f-9a04-48f5-8711-3f89eef2c7fb:
+            uuid: 91c62e5f-9a04-48f5-8711-3f89eef2c7fb
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_company_name'
+              label: 'Company Name'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          7fda9619-daad-4d66-a882-aac9772409b1:
+            uuid: 7fda9619-daad-4d66-a882-aac9772409b1
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_salary'
+              label: Salary
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: inline
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Tech Skills'
+          context_mapping: {  }
+        components:
+          f0f26d2a-bdcd-4546-ab59-29746fa5fcc8:
+            uuid: f0f26d2a-bdcd-4546-ab59-29746fa5fcc8
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_skills'
+              label: 'Tech Skills'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Key Characteristics'
+          context_mapping: {  }
+        components:
+          982df118-f768-41b5-be0b-44e1dfff0a04:
+            uuid: 982df118-f768-41b5-be0b-44e1dfff0a04
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_key_characteristics'
+              label: 'Key Characteristics'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Goals
+          context_mapping: {  }
+        components:
+          6141415c-b32f-4956-b259-46733dd47054:
+            uuid: 6141415c-b32f-4956-b259-46733dd47054
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_goals'
+              label: Goals
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_company_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_d_o_b:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 9
+    region: first
+  field_designation:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_goals:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_key_characteristics:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_projects:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_salary:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_skills:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_about: true
+  member_for: true

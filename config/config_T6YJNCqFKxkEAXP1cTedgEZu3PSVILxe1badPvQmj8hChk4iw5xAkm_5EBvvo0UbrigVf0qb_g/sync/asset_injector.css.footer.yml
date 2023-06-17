@@ -1,0 +1,21 @@
+uuid: a2a87ea7-536d-4ef9-b305-f72515250a4b
+langcode: en
+status: true
+dependencies: {  }
+id: footer
+label: Footer
+code: |
+  .navbar-nav {
+  	flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+      text-align: center;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

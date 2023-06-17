@@ -1,0 +1,16 @@
+uuid: db39a683-6b18-4758-9b27-a02fb68aaab4
+langcode: en
+status: true
+dependencies: {  }
+id: see_more_emp
+label: See_more_emp
+code: |-
+  .more-link {
+      text-align: center;
+      margin: 10px 0;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

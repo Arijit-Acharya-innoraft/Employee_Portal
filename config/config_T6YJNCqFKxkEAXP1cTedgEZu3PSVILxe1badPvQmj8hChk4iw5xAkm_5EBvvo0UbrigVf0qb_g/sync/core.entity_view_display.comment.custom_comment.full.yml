@@ -1,0 +1,39 @@
+uuid: a2a1c285-e17b-4ac0-93b3-22526b895cfd
+langcode: en
+status: false
+dependencies:
+  config:
+    - comment.type.custom_comment
+    - core.entity_view_mode.comment.full
+    - field.field.comment.custom_comment.field_body
+    - field.field.comment.custom_comment.field_email
+    - field.field.comment.custom_comment.field_your_name
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: comment.custom_comment.full
+targetEntityType: comment
+bundle: custom_comment
+mode: full
+content:
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_your_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_body: true
+  links: true
